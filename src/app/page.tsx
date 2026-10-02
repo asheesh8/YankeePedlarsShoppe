@@ -55,36 +55,44 @@ export default function HomePage() {
 
   return (
     <>
+      {/* ── Hero: the film dissolves into the mustard wall ───────────── */}
       <FilmHero
         src="/video/hero-film.mp4"
         poster="/video/hero-film-first.webp"
         lastFrame="/video/hero-film-last.webp"
-      />
-
-      {/* ── Intro on the mustard wall ───────────────────────────────── */}
-      <section className="relative overflow-hidden bg-wall text-on-wall">
-        <Botanical
-          src="/images/vt/maple-branch.webp"
-          width={1300}
-          height={826}
-          className="-top-10 -right-12 w-[10.5rem] -scale-x-100 opacity-95 sm:-top-6 sm:-right-16 sm:w-[22rem] lg:top-[-1.5rem] lg:-right-10 lg:w-[34rem]"
-        />
-        <Botanical
-          src="/images/vt/falling-leaves.webp"
-          width={1100}
-          height={714}
-          className="right-[24%] bottom-2 hidden w-[15rem] opacity-90 lg:block"
-        />
-        <div className={`${container} grid gap-8 py-14 lg:grid-cols-12 lg:items-end lg:py-20`}>
+      >
+        <div className={`${container} grid gap-8 pb-14 lg:grid-cols-12 lg:items-end lg:pb-20`}>
+          {/* A maple branch reaches across the seam between film and wall. */}
+          <Botanical
+            src="/images/vt/maple-branch.webp"
+            width={1300}
+            height={826}
+            className="-top-36 -right-8 w-[10rem] -scale-x-100 sm:-top-32 sm:-right-12 sm:w-[22rem] lg:-top-52 lg:-right-6 lg:w-[32rem]"
+          />
+          <Botanical
+            src="/images/vt/falling-leaves.webp"
+            width={1100}
+            height={714}
+            className="-top-44 left-[40%] hidden w-[11rem] opacity-90 lg:block"
+          />
           <div className="relative z-10 lg:col-span-7">
-            <h1 className="max-w-[14ch] font-display text-[clamp(2.9rem,6.4vw,5.6rem)] leading-[0.98] tracking-[-0.02em]">
+            <h1 className="max-w-[14ch] font-display text-[clamp(2.9rem,6.4vw,5.6rem)] leading-[0.98] tracking-[-0.02em] [text-shadow:0_0_28px_var(--wall),0_0_10px_var(--wall)]">
               Packed to the gills since 1982.
             </h1>
-            <p className="mt-5 max-w-[40ch] text-lg leading-relaxed sm:text-xl">
+            <p className="mt-5 max-w-[40ch] text-lg leading-relaxed sm:text-xl lg:max-w-[52ch]">
               Used furniture, antiques and vintage finds on River Road in Essex Junction. New pieces every week, and
               free local delivery.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+          </div>
+          <div className="relative z-10 flex flex-col gap-8 lg:col-span-5 lg:items-end">
+            <HangTag tilt={-5} stringLength={26} className="order-2 lg:order-1 [&_.hang-tag]:text-[1.8rem]">
+              <span className="block leading-[0.95]">
+                Open daily
+                <br />
+                noon to 5
+              </span>
+            </HangTag>
+            <div className="order-1 flex flex-wrap items-center gap-3 lg:order-2 lg:justify-end">
               <a
                 href={SHOP.mapsUrl}
                 target="_blank"
@@ -102,17 +110,8 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div className="relative z-10 lg:col-span-5 lg:justify-self-end">
-            <HangTag tilt={-5} stringLength={26} className="[&_.hang-tag]:text-[1.8rem]">
-              <span className="block leading-[0.95]">
-                Open daily
-                <br />
-                noon to 5
-              </span>
-            </HangTag>
-          </div>
         </div>
-      </section>
+      </FilmHero>
 
       {/* ── Recent finds ─────────────────────────────────────────────── */}
       <section id="finds" className="relative scroll-mt-16 overflow-hidden py-16 lg:py-20">
@@ -170,7 +169,7 @@ export default function HomePage() {
           <ol className="no-scrollbar -mx-4 mt-10 flex snap-x snap-mandatory scroll-px-4 gap-6 overflow-x-auto px-4 pb-4 md:mx-0 md:grid md:grid-cols-2 md:overflow-visible md:px-0 lg:grid-cols-4 lg:gap-8">
             {STORY.map((c) => (
               <li key={c.marker} className="w-[78vw] max-w-[22rem] shrink-0 snap-start md:w-auto md:max-w-none">
-                <div className="paper-pool relative aspect-[4/3]">
+                <div className="relative aspect-[4/3]">
                   <Image src={c.art} alt={c.alt} fill sizes="(min-width: 1024px) 24vw, 78vw" className="object-contain" />
                 </div>
                 <p className="mt-3 font-display text-3xl leading-none text-accent">{c.marker}</p>

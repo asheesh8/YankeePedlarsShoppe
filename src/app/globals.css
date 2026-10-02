@@ -5,6 +5,7 @@
  * Palette pulled from the shop itself: the mustard paint on the walls, the
  * cobalt of the blue-and-white transferware, and the navy ink of an old
  * ledger. Mustard is a surface (the "wall"), cobalt is the one accent.
+ * Light only, by request: the mustard wall is the brand.
  */
 :root {
   --bg: #f3f3ee;
@@ -23,27 +24,6 @@
   --frame: #4a2f1e;
   --mat: #f7f2e3;
   --shadow: 32 25 14;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #121420;
-    --surface: #1a1d2b;
-    --fg: #edebe3;
-    --muted: #aaabbb;
-    --line: #2d3144;
-    --accent: #a9bcf5;
-    --accent-hover: #c8d4fa;
-    --on-accent: #121420;
-    --wall: #2a2414;
-    --on-wall: #f3e3b6;
-    --on-wall-muted: #cdbf98;
-    --tag: #e7d9b6;
-    --tag-ink: #22212f;
-    --frame: #2b1b10;
-    --mat: #e9e2cf;
-    --shadow: 0 0 0;
-  }
 }
 
 @theme inline {
@@ -73,6 +53,7 @@
 }
 
 html {
+  color-scheme: light;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
@@ -224,29 +205,31 @@ body {
   box-shadow: 0 6px 20px rgb(0 0 0 / 0.25);
 }
 
-/* ------------------------------------------------- watercolor on dark --- */
-/* The story vignettes are translucent watercolor (white lifted to alpha). On
-   light grounds they read as painted onto the page; in dark mode they get a
-   soft pool of paper behind them so the washes keep their color. */
-.paper-pool {
-  position: relative;
-  isolation: isolate;
-}
-@media (prefers-color-scheme: dark) {
-  .paper-pool::before {
-    content: "";
-    position: absolute;
-    inset: -6% -4%;
-    z-index: -1;
-    background: radial-gradient(closest-side, var(--mat) 62%, transparent 100%);
-    opacity: 0.92;
-  }
-}
-
 /* Decorative botanicals sit behind content and never take clicks. */
 .botanical {
   position: absolute;
   pointer-events: none;
   user-select: none;
   z-index: 0;
+}
+
+/* ----------------------------------------------------------- film wash --- */
+/* The opening film is the hero's backdrop, not a box: it feathers out under
+   the nav, softens at the sides and dissolves into the mustard wall below,
+   where the headline sits. Two masks are intersected (vertical x sides). */
+.film-wash {
+  -webkit-mask-image:
+    linear-gradient(to bottom, transparent 0, #000 9%, #000 52%, transparent 97%),
+    linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to bottom, transparent 0, #000 9%, #000 52%, transparent 97%),
+    linear-gradient(to right, transparent 0, #000 7%, #000 93%, transparent 100%);
+  mask-composite: intersect;
+}
+@media (max-width: 639px) {
+  .film-wash {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 7%, #000 58%, transparent 98%);
+    mask-image: linear-gradient(to bottom, transparent 0, #000 7%, #000 58%, transparent 98%);
+  }
 }

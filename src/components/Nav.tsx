@@ -23,12 +23,12 @@ export function Nav() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-on-wall/10 bg-wall text-on-wall">
+    <header className="sticky top-0 z-40 bg-wall text-on-wall">
       <nav
         aria-label="Main"
         className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-6 px-4 sm:px-6 lg:px-10"
       >
-        <Link href="/" className="font-display text-[1.4rem] leading-none tracking-[-0.01em]" onClick={() => setOpen(false)}>
+        <Link href="/" className="font-display text-[1.15rem] leading-none tracking-[-0.01em] whitespace-nowrap min-[380px]:text-[1.4rem]" onClick={() => setOpen(false)}>
           {SHOP.name}
         </Link>
 
