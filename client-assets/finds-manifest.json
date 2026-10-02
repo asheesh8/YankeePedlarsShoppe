@@ -1,0 +1,722 @@
+[
+ {
+  "slug": "stained-glass-lamp",
+  "label": "Stained-glass table lamp",
+  "category": "lighting",
+  "featured": true,
+  "src": "/images/finds/stained-glass-lamp.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "001"
+ },
+ {
+  "slug": "maple-secretary-desk",
+  "label": "Maple secretary desk",
+  "category": "furniture",
+  "featured": true,
+  "src": "/images/finds/maple-secretary-desk.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "017"
+ },
+ {
+  "slug": "victrola-cabinet",
+  "label": "Victrola phonograph cabinet",
+  "category": "furniture",
+  "featured": true,
+  "src": "/images/finds/victrola-cabinet.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "101"
+ },
+ {
+  "slug": "ski-adirondack-chairs",
+  "label": "Ski Adirondack chairs",
+  "category": "porch",
+  "featured": true,
+  "src": "/images/finds/ski-adirondack-chairs.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "134"
+ },
+ {
+  "slug": "blue-willow-pitcher",
+  "label": "Blue-and-white pitcher and bowl",
+  "category": "kitchen",
+  "featured": true,
+  "src": "/images/finds/blue-willow-pitcher.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "060"
+ },
+ {
+  "slug": "parlor-lamp",
+  "label": "Hand-painted parlor lamp",
+  "category": "lighting",
+  "featured": true,
+  "src": "/images/finds/parlor-lamp.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "136"
+ },
+ {
+  "slug": "eastlake-dresser",
+  "label": "Eastlake dresser with mirror",
+  "category": "furniture",
+  "featured": true,
+  "src": "/images/finds/eastlake-dresser.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "131"
+ },
+ {
+  "slug": "bulldog-figure",
+  "label": "Ceramic bulldog",
+  "category": "collectibles",
+  "featured": true,
+  "src": "/images/finds/bulldog-figure.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "030"
+ },
+ {
+  "slug": "striped-wingback",
+  "label": "Striped wingback chair",
+  "category": "furniture",
+  "featured": true,
+  "src": "/images/finds/striped-wingback.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "078"
+ },
+ {
+  "slug": "jadeite-canisters",
+  "label": "Jadeite canister set",
+  "category": "kitchen",
+  "featured": true,
+  "src": "/images/finds/jadeite-canisters.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "107"
+ },
+ {
+  "slug": "brass-trim-box",
+  "label": "Brass-trimmed painted box",
+  "category": "collectibles",
+  "featured": true,
+  "src": "/images/finds/brass-trim-box.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "109"
+ },
+ {
+  "slug": "tall-ship-painting",
+  "label": "Tall ship oil painting",
+  "category": "art",
+  "featured": true,
+  "src": "/images/finds/tall-ship-painting.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "065"
+ },
+ {
+  "slug": "maple-dresser-cupboard",
+  "label": "Maple dresser and corner cupboard",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/maple-dresser-cupboard.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "002"
+ },
+ {
+  "slug": "pine-chest",
+  "label": "Pine chest of drawers",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/pine-chest.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "009"
+ },
+ {
+  "slug": "cherry-chest",
+  "label": "Cherry chest with turned columns",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/cherry-chest.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "011"
+ },
+ {
+  "slug": "tall-chest",
+  "label": "Tall chest of drawers",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/tall-chest.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "015"
+ },
+ {
+  "slug": "long-sideboard",
+  "label": "Long walnut sideboard",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/long-sideboard.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "018"
+ },
+ {
+  "slug": "empire-chest",
+  "label": "Empire chest with mirror back",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/empire-chest.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "020"
+ },
+ {
+  "slug": "marble-top-table",
+  "label": "Marble-top round table",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/marble-top-table.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "026"
+ },
+ {
+  "slug": "floral-recliner",
+  "label": "Floral recliner",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/floral-recliner.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "049"
+ },
+ {
+  "slug": "painted-dresser",
+  "label": "Painted white dresser",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/painted-dresser.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "066"
+ },
+ {
+  "slug": "red-rush-chairs",
+  "label": "Red rush-seat chairs",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/red-rush-chairs.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "073"
+ },
+ {
+  "slug": "baby-grand-piano",
+  "label": "Baby grand piano",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/baby-grand-piano.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "076"
+ },
+ {
+  "slug": "lattice-secretary",
+  "label": "Lattice-front secretary",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/lattice-secretary.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "080"
+ },
+ {
+  "slug": "recliner-pair",
+  "label": "Pair of upholstered recliners",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/recliner-pair.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "081"
+ },
+ {
+  "slug": "carved-armchair",
+  "label": "Carved cane-back armchair",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/carved-armchair.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "088"
+ },
+ {
+  "slug": "writing-desk",
+  "label": "Writing desk with lyre base",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/writing-desk.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "090"
+ },
+ {
+  "slug": "hutch-desk",
+  "label": "Pine hutch desk",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/hutch-desk.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "093"
+ },
+ {
+  "slug": "floral-wingback",
+  "label": "Floral wingback chair",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/floral-wingback.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "095"
+ },
+ {
+  "slug": "pine-washstand",
+  "label": "Pine washstand",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/pine-washstand.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "104"
+ },
+ {
+  "slug": "mahogany-chest",
+  "label": "Mahogany bachelor chest",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/mahogany-chest.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "105"
+ },
+ {
+  "slug": "dining-set",
+  "label": "Queen Anne dining set",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/dining-set.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "124"
+ },
+ {
+  "slug": "stained-glass-nightstands",
+  "label": "Nightstands with leaded-glass doors",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/stained-glass-nightstands.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "129"
+ },
+ {
+  "slug": "eastlake-bed",
+  "label": "Eastlake bed",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/eastlake-bed.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "137"
+ },
+ {
+  "slug": "blanket-chest",
+  "label": "Old blanket chest",
+  "category": "furniture",
+  "featured": false,
+  "src": "/images/finds/blanket-chest.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "146"
+ },
+ {
+  "slug": "ginger-jar-lamp",
+  "label": "Black ginger-jar lamp",
+  "category": "lighting",
+  "featured": false,
+  "src": "/images/finds/ginger-jar-lamp.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "008"
+ },
+ {
+  "slug": "figural-lamp",
+  "label": "Figural bronze-tone lamp",
+  "category": "lighting",
+  "featured": false,
+  "src": "/images/finds/figural-lamp.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "010"
+ },
+ {
+  "slug": "mission-lamp",
+  "label": "Mission-style slag glass lamp",
+  "category": "lighting",
+  "featured": false,
+  "src": "/images/finds/mission-lamp.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "102"
+ },
+ {
+  "slug": "tole-lamp",
+  "label": "Painted tole lamp",
+  "category": "lighting",
+  "featured": false,
+  "src": "/images/finds/tole-lamp.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "106"
+ },
+ {
+  "slug": "blue-glass-lamp",
+  "label": "Blue glass lamp with white enamel",
+  "category": "lighting",
+  "featured": false,
+  "src": "/images/finds/blue-glass-lamp.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "152"
+ },
+ {
+  "slug": "tulip-lamp",
+  "label": "Tulip-shade accent lamp",
+  "category": "lighting",
+  "featured": false,
+  "src": "/images/finds/tulip-lamp.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "154"
+ },
+ {
+  "slug": "boston-terrier",
+  "label": "Cast-iron Boston terrier",
+  "category": "collectibles",
+  "featured": false,
+  "src": "/images/finds/boston-terrier.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "024"
+ },
+ {
+  "slug": "minnow-bucket",
+  "label": "Min-O-Life minnow bucket",
+  "category": "collectibles",
+  "featured": false,
+  "src": "/images/finds/minnow-bucket.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "022"
+ },
+ {
+  "slug": "marble-jar",
+  "label": "Jar of old marbles",
+  "category": "collectibles",
+  "featured": false,
+  "src": "/images/finds/marble-jar.webp",
+  "w": 720,
+  "h": 960,
+  "fb": "031"
+ },
+ {
+  "slug": "chinese-vases",
+  "label": "Pair of painted porcelain vases",
+  "category": "collectibles",
+  "featured": false,
+  "src": "/images/finds/chinese-vases.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "070"
+ },
+ {
+  "slug": "stag-vase",
+  "label": "Stag-head vase",
+  "category": "collectibles",
+  "featured": false,
+  "src": "/images/finds/stag-vase.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "091"
+ },
+ {
+  "slug": "cobalt-vase",
+  "label": "Cobalt glass vase",
+  "category": "collectibles",
+  "featured": false,
+  "src": "/images/finds/cobalt-vase.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "097"
+ },
+ {
+  "slug": "porcelain-flowers",
+  "label": "Porcelain flower centerpiece",
+  "category": "collectibles",
+  "featured": false,
+  "src": "/images/finds/porcelain-flowers.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "004"
+ },
+ {
+  "slug": "pair-of-vases",
+  "label": "Pair of patterned vases",
+  "category": "collectibles",
+  "featured": false,
+  "src": "/images/finds/pair-of-vases.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "006"
+ },
+ {
+  "slug": "fruit-bowl",
+  "label": "Ceramic fruit centerpiece",
+  "category": "collectibles",
+  "featured": false,
+  "src": "/images/finds/fruit-bowl.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "023"
+ },
+ {
+  "slug": "globes",
+  "label": "Pair of desk globes",
+  "category": "art",
+  "featured": false,
+  "src": "/images/finds/globes.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "042"
+ },
+ {
+  "slug": "bird-print",
+  "label": "Framed bird print",
+  "category": "art",
+  "featured": false,
+  "src": "/images/finds/bird-print.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "032"
+ },
+ {
+  "slug": "pelican-painting",
+  "label": "Pelican oil painting",
+  "category": "art",
+  "featured": false,
+  "src": "/images/finds/pelican-painting.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "084"
+ },
+ {
+  "slug": "gallery-wall",
+  "label": "A wall of framed art",
+  "category": "art",
+  "featured": false,
+  "src": "/images/finds/gallery-wall.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "147"
+ },
+ {
+  "slug": "adirondack-poster",
+  "label": "Adirondack watercolor poster",
+  "category": "art",
+  "featured": false,
+  "src": "/images/finds/adirondack-poster.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "150"
+ },
+ {
+  "slug": "cat-watercolors",
+  "label": "Cat watercolors, framed",
+  "category": "art",
+  "featured": false,
+  "src": "/images/finds/cat-watercolors.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "158"
+ },
+ {
+  "slug": "cornbread-pan",
+  "label": "Cast-iron cornbread pan",
+  "category": "kitchen",
+  "featured": false,
+  "src": "/images/finds/cornbread-pan.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "005"
+ },
+ {
+  "slug": "teapot-shelf",
+  "label": "Teapots by the shelf-full",
+  "category": "kitchen",
+  "featured": false,
+  "src": "/images/finds/teapot-shelf.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "007"
+ },
+ {
+  "slug": "pottery-shelves",
+  "label": "Crocks and stoneware",
+  "category": "kitchen",
+  "featured": false,
+  "src": "/images/finds/pottery-shelves.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "029"
+ },
+ {
+  "slug": "yellow-plates",
+  "label": "Yellow dinnerware",
+  "category": "kitchen",
+  "featured": false,
+  "src": "/images/finds/yellow-plates.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "053"
+ },
+ {
+  "slug": "pewter-teapot",
+  "label": "Pewter teapot",
+  "category": "kitchen",
+  "featured": false,
+  "src": "/images/finds/pewter-teapot.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "087"
+ },
+ {
+  "slug": "painted-bowl",
+  "label": "Hand-painted serving bowl",
+  "category": "kitchen",
+  "featured": false,
+  "src": "/images/finds/painted-bowl.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "103"
+ },
+ {
+  "slug": "wicker-swivel-chairs",
+  "label": "White wicker swivel chairs",
+  "category": "porch",
+  "featured": false,
+  "src": "/images/finds/wicker-swivel-chairs.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "085"
+ },
+ {
+  "slug": "patio-set",
+  "label": "Patio set with umbrella",
+  "category": "porch",
+  "featured": false,
+  "src": "/images/finds/patio-set.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "098"
+ },
+ {
+  "slug": "pine-pedestal-table",
+  "label": "Pine pedestal table",
+  "category": "porch",
+  "featured": false,
+  "src": "/images/finds/pine-pedestal-table.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "045"
+ },
+ {
+  "slug": "wine-rack",
+  "label": "Wooden wine rack",
+  "category": "porch",
+  "featured": false,
+  "src": "/images/finds/wine-rack.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "113"
+ },
+ {
+  "slug": "wrought-iron-chair",
+  "label": "Wrought-iron chair",
+  "category": "porch",
+  "featured": false,
+  "src": "/images/finds/wrought-iron-chair.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "135"
+ },
+ {
+  "slug": "drafting-table",
+  "label": "Old drafting table",
+  "category": "porch",
+  "featured": false,
+  "src": "/images/finds/drafting-table.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "141"
+ },
+ {
+  "slug": "pine-work-table",
+  "label": "Pine work table",
+  "category": "porch",
+  "featured": false,
+  "src": "/images/finds/pine-work-table.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "126"
+ },
+ {
+  "slug": "oriental-rug",
+  "label": "Oriental wool rug",
+  "category": "rugs",
+  "featured": false,
+  "src": "/images/finds/oriental-rug.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "100"
+ },
+ {
+  "slug": "braided-rug",
+  "label": "Round braided rug",
+  "category": "rugs",
+  "featured": false,
+  "src": "/images/finds/braided-rug.webp",
+  "w": 720,
+  "h": 960,
+  "fb": "110"
+ },
+ {
+  "slug": "braided-rug-2",
+  "label": "Braided rag rug",
+  "category": "rugs",
+  "featured": false,
+  "src": "/images/finds/braided-rug-2.webp",
+  "w": 900,
+  "h": 1200,
+  "fb": "125"
+ }
+]
