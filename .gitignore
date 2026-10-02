@@ -45,3 +45,5 @@ next-env.d.ts
 !/client-assets/**/
 !/client-assets/finds-manifest.json
 !/client-assets/color_to_alpha.py
+
+!/client-assets/trace_mark.py

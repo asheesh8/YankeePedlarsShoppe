@@ -331,10 +331,10 @@ export default function HomePage() {
 
           <div className="space-y-8 lg:col-span-7">
             <InlineFilm
-              src="/video/hero-film.mp4"
-              poster="/video/hero-film-first.webp"
-              label="A short film: driving up River Road to the shop, crossing the porch and walking inside."
-              caption="The drive in, off River Road"
+              src="/video/drive-in.mp4"
+              poster="/video/drive-in-poster.webp"
+              label="A short film: driving along River Road and pulling in toward the shop's porch."
+              caption="Pulling in off River Road"
             />
             <iframe
               title="Map to Yankee Pedlars' Shoppe, 23 River Rd, Essex Junction"

@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { FacebookLogoIcon, InstagramLogoIcon } from "@phosphor-icons/react/ssr";
 import { SHOP } from "@/lib/site";
+import { SignLockup } from "@/components/Logo";
 
 export function Footer() {
   return (
     <footer className="bg-pine text-on-pine">
       <div className="mx-auto grid max-w-[1360px] gap-10 px-5 pt-16 pb-12 sm:px-8 md:grid-cols-12 lg:px-12">
         <div className="md:col-span-6">
-          <p className="font-display text-[2.6rem] leading-none font-semibold sm:text-5xl">{SHOP.name}</p>
-          <p className="mt-4 max-w-[40ch] text-on-pine-muted">
+          <SignLockup className="h-auto w-[15rem] sm:w-[17rem]" />
+          <p className="mt-6 max-w-[40ch] text-on-pine-muted">
             Used furniture, antiques and vintage finds. Family run in Essex Junction since {SHOP.founded}.
           </p>
         </div>

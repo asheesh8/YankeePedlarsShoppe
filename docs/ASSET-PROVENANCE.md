@@ -8,14 +8,27 @@
   each file back to its Facebook photo id is in `client-assets/finds-manifest.json`
   (`fb` field = index into the local scrape).
 
+## Logo
+
+- `public/logo/wagon.svg`: the wagon mark from the shop's roadside sign (horse-drawn
+  peddler's wagon heaped with furniture, driver, trailing dog). The sign photo was
+  too low-res to trace, so GPT Image 2.5 redrew it as a clean silhouette using the
+  sign crop as reference (job `37388c8f-75f6-49ef-a2e7-a1f3735eef51`), then it was
+  traced to a single vector path with `client-assets/trace_mark.py` (potracer).
+- Lettering is set live in Sorts Mill Goudy, the closest Google Fonts revival of
+  the sign's Goudy-style serif (`src/components/Logo.tsx`).
+- `src/app/icon.png`, `apple-icon.png`: the mark in pine on paper.
+
 ## Generated with Higgsfield (account dancinganglerfish1540, Plus)
 
 All generations Oct 1-2, 2026. Raw masters live in `client-assets/higgsfield/`
 (not committed).
 
-### Drive-in film: `public/video/hero-film.mp4` (Visit section)
+### Drive-in film: `public/video/drive-in.mp4` (Visit section)
 
-Two Kling 3.0 Pro image-to-video shots, joined and retimed with ffmpeg.
+One Kling 3.0 Pro image-to-video shot, retimed 1.2x with ffmpeg (6.7s). The
+second "walk in" shot below was cut on Oct 2, 2026 at the agency's request
+(the walking camera looked unnatural); it is kept only in `client-assets/`.
 
 1. **Drive in** (job `22fee23a-8b84-443f-89b7-73cf882d395f`). Start frame: a Google
    Street View screenshot of 23 River Rd supplied by the agency, cropped and then

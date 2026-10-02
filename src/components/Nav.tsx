@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ListIcon, PhoneIcon, XIcon } from "@phosphor-icons/react";
 import { SHOP } from "@/lib/site";
+import { LogoInline } from "@/components/Logo";
 
 const LINKS = [
   { href: "/finds", label: "Finds" },
@@ -30,10 +31,11 @@ export function Nav() {
       >
         <Link
           href="/"
-          className="font-display text-[1.45rem] leading-none font-semibold whitespace-nowrap min-[400px]:text-[1.65rem]"
+          aria-label={`${SHOP.name}, home`}
+          className="min-w-0 text-[1.05rem] text-ink min-[400px]:text-[1.2rem] sm:text-[1.4rem]"
           onClick={() => setOpen(false)}
         >
-          {SHOP.name}
+          <LogoInline className="[&>svg]:text-pine" />
         </Link>
 
         <ul className="hidden items-center gap-9 text-[0.95rem] md:flex">

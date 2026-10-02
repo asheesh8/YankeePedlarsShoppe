@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Instrument_Sans } from "next/font/google";
+import { Cormorant_Garamond, Instrument_Sans, Sorts_Mill_Goudy } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { MobileBar } from "@/components/MobileBar";
@@ -13,6 +13,8 @@ const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
 });
 const instrument = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument" });
+/** Logo lettering only: closest revival of the Goudy-style serif on the shop's sign. */
+const goudy = Sorts_Mill_Goudy({ subsets: ["latin"], weight: "400", variable: "--font-goudy" });
 
 /** CONFIRM: no domain yet. Swap in the real one before launch. */
 const SITE_URL = "https://yankeepedlarsshoppe.com";
@@ -54,6 +56,7 @@ const jsonLd = {
   url: SITE_URL,
   telephone: SHOP.phone,
   image: `${SITE_URL}/images/shop/beam-room.webp`,
+  logo: `${SITE_URL}/icon.png`,
   foundingDate: String(SHOP.founded),
   priceRange: "$",
   address: {
@@ -75,7 +78,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${cormorant.variable} ${instrument.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${instrument.variable} ${goudy.variable}`}>
       <body className="flex min-h-dvh flex-col pb-16 md:pb-0">
         <script
           type="application/ld+json"
