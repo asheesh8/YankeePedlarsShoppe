@@ -13,16 +13,16 @@ export const metadata: Metadata = {
 
 export default function FindsPage() {
   const cards = Object.fromEntries(
-    FINDS.map((f, i) => [
+    FINDS.map((f) => [
       f.slug,
-      <FindCard key={f.slug} find={f} index={i} sizes="(min-width: 1024px) 22vw, (min-width: 768px) 30vw, 46vw" />,
+      <FindCard key={f.slug} find={f} sizes="(min-width: 1024px) 22vw, (min-width: 768px) 30vw, 46vw" />,
     ]),
   );
 
   return (
     <section className="py-14 lg:py-20">
-      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-10">
-        <h1 className="font-display text-[clamp(2.8rem,6vw,5rem)] leading-[1] tracking-[-0.02em]">Recent finds</h1>
+      <div className="mx-auto max-w-[1360px] px-5 sm:px-8 lg:px-12">
+        <h1 className="font-display text-[clamp(3rem,6vw,5rem)] leading-none font-medium tracking-[-0.015em]">Recent finds</h1>
         <p className="mt-4 max-w-[56ch] text-lg text-muted">
           Pieces the shop has posted over the last few weeks. New things come in all the time and these sell fast,
           so text a photo to {SHOP.phone} and we&apos;ll tell you what&apos;s still here.

@@ -1,36 +1,32 @@
 import Image from "next/image";
-import { ChatTextIcon } from "@phosphor-icons/react/ssr";
-import { HangTag } from "@/components/HangTag";
 import { smsAbout } from "@/lib/site";
-import type { Find } from "@/lib/finds";
+import { CATEGORIES, type Find } from "@/lib/finds";
 
-const TILTS = [-5, 3, -2, 4, -3, 2];
+const CATEGORY_LABEL = Object.fromEntries(CATEGORIES.map((c) => [c.id, c.label]));
 
-export function FindCard({ find, index, sizes }: { find: Find; index: number; sizes: string }) {
+/** One catalog entry: photograph, italic caption, category and a text link. */
+export function FindCard({ find, sizes }: { find: Find; sizes: string }) {
   return (
     <article className="group">
-      <div className="relative aspect-[3/4] overflow-hidden bg-surface shadow-card">
+      <div className="relative aspect-[4/5] overflow-hidden bg-linen">
         <Image
           src={find.src}
           alt={find.label}
           fill
           sizes={sizes}
-          className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+          className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
         />
       </div>
-      <div className="-mt-5 ml-3 sm:ml-4">
-        <HangTag tilt={TILTS[index % TILTS.length]}>
-          <h3 className="font-hand text-[1.4rem] font-normal leading-[1.05] sm:text-[1.55rem]">{find.label}</h3>
-        </HangTag>
+      <h3 className="caption mt-3">{find.label}</h3>
+      <div className="mt-1 flex items-baseline justify-between gap-3 text-[0.85rem]">
+        <span className="text-muted">{CATEGORY_LABEL[find.category]}</span>
+        <a
+          href={smsAbout(find.label)}
+          className="inline-flex min-h-11 items-center font-medium text-brick underline-offset-4 hover:underline sm:min-h-0"
+        >
+          Ask about it<span className="sr-only">: {find.label}</span>
+        </a>
       </div>
-      <a
-        href={smsAbout(find.label)}
-        className="mt-2 inline-flex min-h-11 items-center gap-1.5 text-[0.9rem] font-semibold text-accent underline-offset-4 hover:underline"
-      >
-        <ChatTextIcon size={18} weight="bold" aria-hidden />
-        Ask if it&apos;s still here
-        <span className="sr-only">: {find.label}</span>
-      </a>
     </article>
   );
 }

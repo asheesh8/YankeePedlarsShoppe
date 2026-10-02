@@ -1,14 +1,18 @@
 import type { Metadata, Viewport } from "next";
-import { Gloock, Reenie_Beanie, Schibsted_Grotesk } from "next/font/google";
+import { Cormorant_Garamond, Instrument_Sans } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { MobileBar } from "@/components/MobileBar";
 import { SHOP } from "@/lib/site";
 import "./globals.css";
 
-const gloock = Gloock({ subsets: ["latin"], weight: "400", variable: "--font-gloock" });
-const schibsted = Schibsted_Grotesk({ subsets: ["latin"], variable: "--font-schibsted" });
-const reenie = Reenie_Beanie({ subsets: ["latin"], weight: "400", variable: "--font-reenie" });
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+});
+const instrument = Instrument_Sans({ subsets: ["latin"], variable: "--font-instrument" });
 
 /** CONFIRM: no domain yet. Swap in the real one before launch. */
 const SITE_URL = "https://yankeepedlarsshoppe.com";
@@ -32,14 +36,14 @@ export const metadata: Metadata = {
     siteName: SHOP.name,
     url: SITE_URL,
     title: `${SHOP.name} | Used Furniture & Antiques, Essex Junction`,
-    description: "Packed to the gills since 1982. Furniture, lamps, art, rugs and smalls, with new pieces every week.",
+    description: "Fine used furniture, antiques and vintage finds on River Road since 2004, from a family picking since 1982.",
     images: [{ url: "/images/shop/beam-room.webp", width: 1050, height: 1400 }],
   },
   alternates: { canonical: "/" },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#e2ae2b",
+  themeColor: "#fbfaf6",
   colorScheme: "light",
 };
 
@@ -71,7 +75,7 @@ const jsonLd = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${gloock.variable} ${schibsted.variable} ${reenie.variable}`}>
+    <html lang="en" className={`${cormorant.variable} ${instrument.variable}`}>
       <body className="flex min-h-dvh flex-col pb-16 md:pb-0">
         <script
           type="application/ld+json"
@@ -79,7 +83,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-surface focus:px-4 focus:py-2 focus:font-semibold"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-paper focus:px-4 focus:py-2 focus:font-semibold"
         >
           Skip to content
         </a>

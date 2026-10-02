@@ -13,7 +13,7 @@
 All generations Oct 1-2, 2026. Raw masters live in `client-assets/higgsfield/`
 (not committed).
 
-### Hero film: `public/video/hero-film.mp4`
+### Drive-in film: `public/video/hero-film.mp4` (Visit section)
 
 Two Kling 3.0 Pro image-to-video shots, joined and retimed with ffmpeg.
 
@@ -26,8 +26,6 @@ Two Kling 3.0 Pro image-to-video shots, joined and retimed with ffmpeg.
    porch photo (Facebook, cropped 16:9). End frame: the shop's mustard-wall room
    photo (Facebook, cropped 16:9). The room is shown at its real size.
 
-The title card ("Yankee Pedlars' Shoppe / Furniture & Antiques") is live HTML over
-the final frame, not baked into the video.
 
 ### Watercolors
 
@@ -39,8 +37,10 @@ the final frame, not baked into the video.
 - `public/images/vt/*`: GPT Image 2.5 with transparent backgrounds. Maple branch,
   birch and pine, falling leaves, fern and berry sprig, maple syrup jug and bottle,
   sap buckets, sugar shack, covered bridge, Green Mountains ridge. Decorative only.
-- `public/images/art/leopard.webp`: GPT Image 2.5 seamless tile, used on the
-  "Always buying!" tag (a nod to the leopard in the shop's Instagram name).
+- `public/images/vt/truck.webp`: GPT Image 2.5 transparent re-render of the pickup
+  (job `42224355-56b0-40e6-b29c-080f97a712ee`) for the pine "we buy" band.
+- `public/images/art/leopard.webp`, `truck.webp`: from the first (mustard) version,
+  no longer used on the page.
 
 ### Rejected
 
@@ -48,3 +48,5 @@ the final frame, not baked into the video.
   because the real shop is much smaller. Kept in `client-assets/higgsfield/rejected/`
   for reference only.
 - An earlier framed portrait reel (three 9:16 clips). Replaced by the drive-in film.
+- The whole first "mustard wall" design (film hero with title card). Replaced by
+  the antique-catalog direction; the film now lives in the Visit section.

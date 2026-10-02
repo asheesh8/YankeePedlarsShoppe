@@ -23,19 +23,23 @@ export function Nav() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-40 bg-wall text-on-wall">
+    <header className="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur-md">
       <nav
         aria-label="Main"
-        className="mx-auto flex h-16 max-w-[1400px] items-center justify-between gap-6 px-4 sm:px-6 lg:px-10"
+        className="mx-auto flex h-[4.25rem] max-w-[1360px] items-center justify-between gap-6 px-5 sm:px-8 lg:px-12"
       >
-        <Link href="/" className="font-display text-[1.15rem] leading-none tracking-[-0.01em] whitespace-nowrap min-[380px]:text-[1.4rem]" onClick={() => setOpen(false)}>
+        <Link
+          href="/"
+          className="font-display text-[1.45rem] leading-none font-semibold whitespace-nowrap min-[400px]:text-[1.65rem]"
+          onClick={() => setOpen(false)}
+        >
           {SHOP.name}
         </Link>
 
-        <ul className="hidden items-center gap-8 text-[0.95rem] font-medium md:flex">
+        <ul className="hidden items-center gap-9 text-[0.95rem] md:flex">
           {LINKS.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="underline-offset-[6px] decoration-2 hover:underline">
+              <Link href={l.href} className="text-muted transition-colors hover:text-ink">
                 {l.label}
               </Link>
             </li>
@@ -43,9 +47,9 @@ export function Nav() {
           <li>
             <a
               href={SHOP.phoneHref}
-              className="inline-flex items-center gap-2 bg-fg px-4 py-2.5 text-[0.95rem] font-semibold text-bg transition-transform active:translate-y-px"
+              className="inline-flex items-center gap-2 bg-pine px-4 py-2.5 text-[0.92rem] font-medium text-on-pine transition-colors hover:bg-pine-deep"
             >
-              <PhoneIcon size={18} weight="bold" aria-hidden />
+              <PhoneIcon size={16} weight="bold" aria-hidden />
               {SHOP.phone}
             </a>
           </li>
@@ -59,20 +63,16 @@ export function Nav() {
           aria-label={open ? "Close menu" : "Open menu"}
           onClick={() => setOpen((o) => !o)}
         >
-          {open ? <XIcon size={26} aria-hidden /> : <ListIcon size={26} aria-hidden />}
+          {open ? <XIcon size={24} aria-hidden /> : <ListIcon size={24} aria-hidden />}
         </button>
       </nav>
 
       {open && (
-        <div id="mobile-menu" className="border-t border-on-wall/10 md:hidden">
-          <ul className="flex flex-col px-4 py-2">
+        <div id="mobile-menu" className="border-t border-line md:hidden">
+          <ul className="flex flex-col px-5 py-3">
             {LINKS.map((l) => (
               <li key={l.href}>
-                <Link
-                  href={l.href}
-                  className="block py-3 font-display text-3xl"
-                  onClick={() => setOpen(false)}
-                >
+                <Link href={l.href} className="block py-2.5 font-display text-3xl" onClick={() => setOpen(false)}>
                   {l.label}
                 </Link>
               </li>

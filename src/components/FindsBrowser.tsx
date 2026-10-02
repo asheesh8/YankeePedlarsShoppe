@@ -37,7 +37,7 @@ export function FindsBrowser({
       <div
         role="group"
         aria-label="Filter by category"
-        className="no-scrollbar -mx-4 flex gap-2 overflow-x-auto px-4 sm:mx-0 sm:flex-wrap sm:px-0"
+        className="no-scrollbar -mx-5 flex gap-2 overflow-x-auto px-5 sm:mx-0 sm:flex-wrap sm:px-0"
       >
         {options.map((o) => {
           const on = filter === o.id;
@@ -48,11 +48,11 @@ export function FindsBrowser({
               type="button"
               aria-pressed={on}
               onClick={() => choose(o.id)}
-              className={`shrink-0 border px-4 py-2.5 text-[0.95rem] font-semibold transition-colors ${
-                on ? "border-fg bg-fg text-bg" : "border-line bg-surface hover:border-fg"
+              className={`shrink-0 border px-3.5 py-2 text-[0.92rem] transition-colors ${
+                on ? "border-pine bg-pine text-on-pine" : "border-line text-muted hover:border-ink hover:text-ink"
               }`}
             >
-              {o.label} <span className={on ? "opacity-70" : "text-muted"}>{n}</span>
+              {o.label} <span className="opacity-60">{n}</span>
             </button>
           );
         })}
@@ -73,7 +73,7 @@ export function FindsBrowser({
 
 export function FindsGrid({ children }: { children: React.ReactNode }) {
   return (
-    <ul className="mt-8 grid grid-cols-2 gap-x-4 gap-y-12 sm:gap-x-6 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-8">
+    <ul className="mt-8 grid grid-cols-2 gap-x-4 gap-y-10 sm:gap-x-6 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-8 lg:gap-y-14">
       {children}
     </ul>
   );

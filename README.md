@@ -16,7 +16,7 @@ Next.js 16 (App Router), Tailwind v4, Motion, Phosphor icons. Both routes are st
   Items marked `CONFIRM:` are open questions, collected in `CLIENT-QUESTIONS.md`.
 - `src/lib/finds.ts`: the recent-finds catalog, generated from
   `client-assets/finds-manifest.json`.
-- `src/components/FilmHero.tsx`: the opening drive-up film. It is the hero backdrop, feathered into the mustard wall (`.film-wash`), plays once and holds.
+- `src/components/InlineFilm.tsx`: the drive-up film, shown in the Visit section; plays once when scrolled into view.
 - `public/video/`: hero film and its first and last frames.
 - `public/images/finds`, `shop`: the shop's own Facebook photos.
 - `public/images/art`, `vt`: Higgsfield watercolors (story, truck, Vermont botanicals).
@@ -27,8 +27,13 @@ locally and is not committed.
 
 ## Design notes
 
-- Palette from the shop: mustard wall paint (surface), Blue Willow cobalt (single
-  accent), ledger navy ink. Light only (by request), tokens in `globals.css`.
-- Type: Gloock (display), Schibsted Grotesk (text), Reenie Beanie (price tags only).
-- Signature device: handwritten manila hang tags, like the price tags in the shop.
-- Corners are square everywhere; tags are the only shaped element.
+Direction: "antique catalog" (chosen Oct 2, 2026 after the first mustard-wall
+version was rejected for too much yellow and the film hero).
+
+- Warm white paper page; pine green for structure (buttons, "we buy" band,
+  footer); brick red as the single accent. Light only. Tokens in `globals.css`.
+- Type: Cormorant Garamond (headlines, italic catalog captions), Instrument Sans (text).
+- The shop's own photographs lead: a captioned photo plate in the hero, catalog
+  entries for recent finds. Square corners everywhere.
+- Vermont watercolors kept to a few touches: birch and pine by the finds, the
+  pickup on the pine band, the Green Mountains running into the footer.
