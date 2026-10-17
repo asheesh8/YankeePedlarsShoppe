@@ -10,6 +10,8 @@ npm run dev
 
 Next.js 16 (App Router), Tailwind v4, Motion, Phosphor icons. Both routes are static.
 
+**Live:** https://yankee-pedlars-shoppe.vercel.app — Vercel, stock Next.js preset; pushes to `main` deploy to production. Static site with no server code and no environment variables.
+
 ## Where things live
 
 - `src/lib/site.ts`: every fact and line of copy (hours, phone, story, reviews).
